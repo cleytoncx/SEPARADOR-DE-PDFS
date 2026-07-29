@@ -8,6 +8,15 @@ from PyPDF2 import PdfReader, PdfWriter
 
 st.set_page_config(page_title="Separador de Espelhos de Ponto", page_icon="📄")
 
+HIDE_ST_STYLE = """
+    <style>
+        header {visibility: hidden}
+        .block-container {padding:25px}
+        footer {visibility:hidden;}
+    </style>
+"""
+st.markdown(HIDE_ST_STYLE, unsafe_allow_html=True)
+
 st.title("📄 Separador de Espelhos de Ponto")
 st.write("Faça o upload do PDF e o sistema irá separar por departamento e colaborador.")
 
